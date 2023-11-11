@@ -1,0 +1,36 @@
+.color-stop{
+    width: 700px;
+    height: 500px;
+    background-image: repeating-radial-gradient(ellipse at center, red 15%, yellow 15%, yellow 50%, brown 50%, brown 75%, green 85% );
+}
+
+.reppit-gradient {
+    width: 500px;
+    height: 400px;
+    background-image: repeating-linear-gradient(to right bottom, red ,red 25px, yellow 25px, yellow 50px);
+}
+
+.reppit-radeal{
+    width: 600px;
+    height: 50px;
+    background-image: repeating-radial-gradient(circle at center, purple,purple 10px, red 10px, red 20px);
+}
+
+.box{
+    width: 600px;
+    height: 500px;
+    background-image: linear-gradient(red, blue, purple);
+}
+
+.image-box {
+    width: 700px;
+    height: 500px;
+    
+background-image: radial-gradient(circle at center, red, yellow, brown);
+/* background-image: radial-gradient(circle at top right, red, yellow, brown); */
+}
+.box2 {
+    width: 500px;
+    height: 400px;
+    background-image: linear-gradient(rgba(255, 0, 0, 0.5), rgb(255, 0, 0));
+}
