@@ -1,0 +1,181 @@
+/*Обнулення*/
+*,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  background-color: #333;
+  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  color: #fff;
+  font-size: 16px;
+  line-height: 24px;
+}
+a {
+  color: #794f45;
+}
+h1 {
+  font-size: 40px;
+  margin: 0px 0px 50px 0px;
+}
+h2 {
+  font-size: 30px;
+  margin: 0px 0px 20px 0px;
+}
+p {
+  margin: 20px 0;
+}
+
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+  }
+  
+  .content {
+    padding: 30px 3%;
+  }
+  .content__block {
+    margin: 0px 0px 50px 0px;
+  }
+  /* Основні стилі */
+  
+  /* 2D */
+  .content__2D .content__block div {
+    display: flex;
+    text-transform: uppercase;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 1px;
+    text-align: center;
+    width: 150px;
+    height: 150px;
+    transition: all 0.8s ease 0s;
+  }
+
+.content__translate {
+    background-color: blue;
+    /* transform: translate(50px, -15px); */
+/* transform: translateX(20px); */
+}
+
+.content__translate:hover {
+    transform: translate(50px, -15px);
+}
+
+.content__scale {
+    background-color: aqua;
+
+}
+
+.content__scale:hover{
+    transform: scale(0.5, -2);
+}
+
+.content__rotate {
+    background-color: chocolate;
+
+}
+
+.content__rotate:hover {
+    transform: rotate(260deg);
+}
+
+.content__skew {
+    background-color: chartreuse;
+    
+}
+
+.content__skew:hover {
+    transform: skew(-20deg, -30deg);
+}
+/* matrix
+ 1 значення відповідає за горизонтальне значення тобто scaleX
+ 2 значення відповідає за вертикальне значеня тобто scaleY
+ 3 значення відповідає за деформацію по вертикалі тобто skewY
+ 4 значення відповідає за деформацію по гирозонталі тобто skewX
+ 5  значення відповідає за змішення по горизонталі тобто translateX
+6 значення відповідає за змішення по вертикалі тобто translateY */
+ .content__matrix {
+    background-color: crimson;
+ /* transform: matrix(); */
+}
+
+.content__matrix:hover {
+    transform: matrix(1,2,5,1,0,0);
+}
+
+.content__multi {
+background-color: greenyellow;
+/* transform: translate(50px, 30px), rotate(20deg, 30deg), scale(20deg , 15deg); */
+}
+
+.content__multi:hover{
+    transform: translate(50px, 30px),scale(0.5, -2) ,rotate(260deg) ;
+}
+
+.content__transform-origin {
+    background-color: cadetblue;
+    /* transform: rotate(45deg); */
+}
+
+.content__transform-origin:hover {
+    transform: rotate(360deg);
+    transform-origin: center right;
+}
+
+.content__wrapper3d {
+    background-color: lawngreen;
+    width: 150px;
+    height: 150px;
+    perspective-origin: 0 0;
+    perspective: 400px;
+
+}
+
+.content__perspective {
+    background-color: azure;
+    width: 150px;
+    height: 150px;
+    transition: all 0.8s ease 0s;
+}
+
+.content__perspective:hover {
+    transform: rotate(50deg);
+}
+
+.content__translate3D {
+    background-color: goldenrod;
+width: 150px;
+height: 150px;
+transition: all 0.8s ease 0s;
+}
+.content__translate3D:hover {
+    transform: translate3d(30px, 20px, 40px);
+}
+
+.content__scale3D {
+    background-color: darkmagenta;
+    width: 150px;
+    height: 150px;
+}
+.content__scale3D:hover {
+    transform: scale3d(2,3,2);
+    transition: all 0.8s ease 0s;
+}
+
+.content__rotate3d {
+    background-color: wheat;
+    width: 150px;
+    height: 150px;
+    transition: all 0.8s ease 0s;
+}
+
+.content__rotate3d:hover {
+   transform: rotate3d(1, 1, 1, 50deg);
+}
+
